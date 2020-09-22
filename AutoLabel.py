@@ -40,7 +40,7 @@ def sheet_on26101(filename, printlist):
     '''printlistに辞書リストを渡す
     辞書リストには枚数, first_l, second_l, third_lを指定
     second_l以降は任意 あとは勝手にやってくれる
-    ただし総数が60枚を超えるとエラー
+    総数が60枚を超えた場合勝手に改ページする
     '''
     # 源真ゴシック
     GEN_SHIN_GOTHIC_MEDIUM_TTF = "./fonts/genshingothic-20150607/GenShinGothic-Monospace-Medium.ttf"

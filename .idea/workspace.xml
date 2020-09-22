@@ -4,14 +4,17 @@
     <list default="true" id="7d2eac19-5096-4533-841c-d35160bf6e30" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AutoLabel.py" beforeDir="false" afterPath="$PROJECT_DIR$/AutoLabel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Label-center/Fluorescence_set.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Label-center/Golden_set.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Label-center/PCRset1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Label-center/PCRset2.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Label-little-right/Fluorescence_set.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Label-little-right/Golden_set.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Label-little-right/PCRset1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Label-little-right/PCRset2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDFfiles/Buffer1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDFfiles/Fluorescence_set.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDFfiles/Golden_set.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDFfiles/HelloWorld.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDFfiles/HelloWorld2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDFfiles/Ligation関連.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDFfiles/PCRset1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDFfiles/PCRset2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDFfiles/sheet_test.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDFfiles/test.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDFfiles/test2.pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
