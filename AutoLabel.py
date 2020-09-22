@@ -23,7 +23,7 @@ def print_on26101(c, row, column, first_l, second_l = None, third_l = None, size
         return
 
     #ラベル位置の指定
-    x = m2i(18.5 + 13 * (column - 1))
+    x = m2i(17.5 + 13 * (column - 1))
     y = m2i(15.5 + 13 * (row - 1))
 
     if second_l == None and third_l == None:
@@ -70,8 +70,16 @@ def sheet_on26101(filename, printlist):
                 third_l = None
             print_on26101(c,row, column, first_l, second_l, third_l)
             counter += 1
+            if counter == 60:
+                #60枚以上書き込んだら、新しいページに続ける
+                c.showPage()
+                pdfmetrics.registerFont(TTFont('GenShinGothic', GEN_SHIN_GOTHIC_MEDIUM_TTF))
+                font_size = 5
+                c.setFont('GenShinGothic', font_size)
+                counter = 0
     # Canvasに書き込み
-    c.showPage()
+    if counter != 0:
+        c.showPage()
     c.save()
 
 # #源真ゴシック
@@ -116,9 +124,6 @@ if __name__ == '__main__':
          'second_l': 'Forward',
          'third_l': 'primer',
          },
-    )
-
-    printlist2 = (
         {'num': 4,
          'first_l': '2 uM',
          'second_l': 'Forward',
@@ -154,9 +159,6 @@ if __name__ == '__main__':
          'second_l': 'buffer',
          'third_l': None,
          },
-    )
-
-    printlist3 = (
         {'num': 12,
          'first_l': 'Loading',
          'second_l': 'buffer',
@@ -180,15 +182,13 @@ if __name__ == '__main__':
          'first_l': 'タンパク質',
          'second_l': 'マーカー',
          },
-    )
-
-    printlist4 = (
         {'num': 16,
          'first_l': 'sfGFP',
          },
         {'num': 16,
          'first_l': '10 uM',
-         'second_l': 'フルオレセイン',
+         'second_l': 'フルオレ',
+         'third_l':'セイン',
          },
         {'num': 16,
          'first_l': '2% SDS',
@@ -198,8 +198,5 @@ if __name__ == '__main__':
          'second_l': 'グアニジン',
          },
     )
-    sheet_on26101('PCRset1.pdf', printlist1)
-    sheet_on26101('PCRset2.pdf', printlist2)
-    sheet_on26101('Golden_set.pdf', printlist3)
-    sheet_on26101('Fluorescence_set.pdf', printlist4)
-    webbrowser.open('PCRset1.pdf')
+    sheet_on26101('LabelSet-Center.pdf', printlist1)
+    webbrowser.open('LabelSet-Center.pdf')
