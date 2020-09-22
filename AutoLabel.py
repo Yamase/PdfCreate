@@ -23,8 +23,8 @@ def print_on26101(c, row, column, first_l, second_l = None, third_l = None, size
         return
 
     #ラベル位置の指定
-    x = m2i(17.5 + 13 * (column - 1))
-    y = m2i(13.5 + 13 * (row - 1))
+    x = m2i(18.5 + 13 * (column - 1))
+    y = m2i(15.5 + 13 * (row - 1))
 
     if second_l == None and third_l == None:
         c.drawCentredString(x, y+0.4*font_size, first_l)
